@@ -1,0 +1,214 @@
+* {
+
+    margin: 00px;
+    padding: 01px;
+    justify-content: flex-start;
+
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: initial;
+    justify-content: flex-start;
+
+
+  }
+  
+  html {  
+    font-size: 50.5%;
+
+    justify-content: flex-start;
+
+  }
+  
+  body {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1;
+    justify-content: flex-start;
+
+  }
+  
+  
+  .container {
+    width: 1200px;
+    margin: 0px;
+    padding: 20rem;
+    background-color: rgb(190, 212, 190);
+
+
+    justify-content: flex-start;
+
+  }
+  
+  .container > div {
+    width: 100px;
+    height: 100px;  
+    border: 1px solid none;
+    background-color: #fff
+    
+
+  }
+  
+  /* .container {
+    display: flex;
+    gap: 0px;
+  } */
+  
+  /*
+    * Flex Wrap
+    By default, flex items will all try to fit onto one line, even if it means shrinking them smaller than their content. The flex-wrap property lets you control this behavior. It can take three values: nowrap (default), wrap, and wrap-reverse.
+  */
+  /* .container {
+    width: 250px;
+     display: flex;
+  justify-content: end;
+  } */
+  
+  /*
+    * Flex Direction
+    The flex-direction property defines the main axis direction in which flex items are laid out. It can take four values: row (default), row-reverse, column, and column-reverse.
+  */
+  /* .container {
+    display: flex;
+  justify-content: end;
+  } */
+  
+  /*
+    * Justify Content
+    The justify-content property aligns items along the main axis. For example, if your main axis is horizontal (with flex-direction: row), justify-content controls the horizontal alignment.
+    
+    Here are the possible values for justify-content:
+    flex-start (default): Items are packed toward the start of the line.
+    flex-end: Items are packed toward the end of the line.
+    center: Items are centered along the line.
+    space-between: Items are evenly distributed in the line; first item is on the start line, last item on the end line.
+    space-around: Items are evenly distributed in the line with equal space around them.
+  */
+  /* .container {
+     display: flex;
+  justify-content: center;
+  } */
+  /* flex-direction: row; */
+  /* justify-content: flex-start; */
+  /* justify-content: flex-end; */
+  /* justify-content: space-between; */
+  /* justify-content: space-evenly; */
+  /* justify-content: space-around; */
+  
+  /* 
+    * Align Items
+    The align-items property aligns items along the cross axis. For example, if your main axis is horizontal (with flex-direction: row), align-items controls the vertical alignment.
+  
+    Here are the possible values for align-items:
+    stretch (default): Stretch to fill the container (still respect min-width/max-width).
+    flex-start: Items are placed at the start of the cross axis.
+    flex-end: Items are placed at the end of the cross axis.
+    center: Items are centered in the cross-axis.
+    baseline: Items are aligned such as their baselines align.
+  */
+  /* .container {
+    display: flex;
+    height: 500px;
+    align-items: center;
+  } */
+  /* flex-direction: row; */
+  /* align-items: flex-start; */
+  /* align-items: flex-end; */
+  /* align-items: baseline; */
+  
+  /* 
+    * Justify Content and Align Items
+    Usually Justify Content and Align Items come together to align and justify items together. 
+  */
+  /* .container {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  /* flex-direction: row; */
+  
+  /*
+    * Flex Grow, Flex Shrink, and Flex Basis
+    flex-grow, flex-shrink, and flex-basis are properties that you can apply directly to flex items to control how they grow and shrink relative to the other items in the container. They can be used separately or combined into the shorthand flex property.
+  
+    * Flex-grow
+    The flex-grow property specifies how much a flex item will grow relative to the rest of the flex items in the container when extra space is distributed.
+  */
+  /* .container {
+    display: flex;
+  justify-content: center;
+    width: 100%;
+  }
+  
+  .container > div {
+    width: 100px;
+    border: 1px solid black;
+  }
+  
+  .container > div:nth-child(2) {
+    flex-grow: 1;
+  } */
+  
+  /* 
+    In this example, each div would normally be 100px wide. However, because the second div has flex-grow: 1, it will grow to take up the remaining space in the container. The other two divs remain at their original width of 100px.
+  */
+  
+  /* 
+    * Flex-shrink
+    The flex-shrink property specifies how much a flex item will shrink relative to the rest of the flex items in the container when negative space is distributed (i.e., when the total size of the flex items is larger than the flex container).
+  */
+  /* .container {
+    display: flex;
+  justify-content: center;
+    width: 600px;
+  }
+  
+  .container > div {
+    width: 100px;
+    border: 1px solid black;
+  }
+  
+  .container > div:nth-child(2) {
+    flex-shrink: 3;
+  } */
+  
+  /* 
+    * Flex-basis
+    The flex-basis property sets the initial size of a flex item, before free space is distributed according to the flex factors (flex-grow and flex-shrink).
+  */
+  /* .container {
+     display: flex;
+  justify-content: center;
+    width: 100%;
+  }
+  
+  .container > div {
+    flex-basis: 170px;
+    border: 1px solid black;
+  }
+  
+  .container > div:nth-child(2) {
+    display: flex;
+  justify-content: center;
+  }*/
+  
+  /* 
+    * Shorthand: Flex
+    The flex property is a shorthand for flex-grow, flex-shrink, and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. Default is 0 1 auto.
+  */
+  /* .container > div {
+    flex: 0 1 120px; /* flex-grow, flex-shrink, flex-basis */
+  /*} */
+  
+  /* This is equivalent to: */
+  /* .container > div {
+     display: flex;
+  justify-content: center;
+  } */
+  
+  
